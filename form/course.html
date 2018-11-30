@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Course</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/forms.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style>
+        .but {
+            border: none;
+            border-bottom: 1px solid rgb(248, 244, 244);
+            background: none;
+            color: rgba(255, 255, 255, 0.89);
+
+        }
+
+        .button {
+            border: none;
+            border-bottom: 1px solid rgb(248, 244, 244);
+            background: none;
+            color: rgba(245, 245, 245, 0.548);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid" style="width:80%; margin:auto;">
+
+        <div class="row" style="color:rgb(200, 221, 175);">
+            <div class="col-lg-8 col-md-8 col-sm-8" style="padding:0px; background:rgba(78, 3, 7, 0.849); ">
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12" style="text-align:center;">
+                        <h4 style="font-weight:bold; padding-left:20px; background:rgb(41, 183, 240); color:rgb(248, 248, 248)">REGISTRATION</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h3 style="padding-left:20px;">Course Application</h3>
+                    </div>
+                </div>
+
+                <form action="success.html" id="personal">
+                    <div class="row" style="padding-left:20px;">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+
+                            <label style="padding-top:25px;">Matric Number:</label>
+                            <br>
+                            <input type="text" name="number" class="but" placeholder="Matric Number">
+
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+
+                            <label style="padding-top:25px;">Course Code:</label>
+                            <br>
+                            <input type="text" name="title" class="but" placeholder="Course Code">
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="row" style="padding-left:20px;">
+
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+
+                            <label style="padding-top:25px;">Department:</label>
+                            <br>
+                            <input type="text" name="faculty" class="but" placeholder="Department">
+
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+
+                            <label style="padding-top:25px;">Faculty:</label>
+                            <br>
+                            <input type="text" name="department" class="but" placeholder="Faculty">
+
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="row" style="padding-top:20px;padding-left:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h6>Gender</h6>
+                    </div>
+
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <label>
+                            <input type="radio" name="gender">&nbsp;&nbsp; Male</label>
+                        <label>
+                            <input type="radio" name="gender">&nbsp;&nbsp; Female</label>
+
+                    </div>
+
+                </div> -->
+
+
+                    <div class="row" style="padding-top:20px;padding-left:20px;">
+                        <div class="col-lg-12 col-md-8 col-sm-8">
+                            <h6>Which course are you applying for?</h6>
+                        </div>
+                        <div class="col-lg-3 col-md-8 col-sm-8">
+                            <label>
+                                <input type="checkbox" name="course">&nbsp;Mathematics</label>
+                            <label>
+                                <input type="checkbox" name="course">&nbsp;Chemistry</label>
+                            <label>
+                                <input type="checkbox" name="course">&nbsp;Biology</label>
+                        </div>
+                    </div>
+
+                    <div class="row" style="text-align:center;padding-top:20px; padding-bottom:20px;">
+                        <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom:20px;">
+                            <a href="forms.html">
+                                <button type="button" class="btn btn-info">Previous</button>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                <button type="submit" class="btn btn-info">Next</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-10 col-sm-12" style="margin:0px;padding:0px; ">
+                <img src="images/15.jpg" style="width:390px;margin:auto; padding:0px;">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="jquery/jquery.validate.min.js"></script>
+    <script>
+        $(function () {
+
+            $("#personal").validate({
+                rules: {
+                    number: {
+                        required: true,
+                        number:true
+                    },
+
+                    title: {
+                        required: true,
+                    },
+                    faculty: {
+                        required: true,
+                    },
+
+                    department: {
+                        required: true,
+                    },
+                },
+            });
+
+        })
+    </script>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
